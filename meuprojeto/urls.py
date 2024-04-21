@@ -20,6 +20,6 @@ from blog.views import post_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
-    path('', post_view, name='home'),
+    path('blog/', include('blog.urls')),  # Isto inclui as URLs definidas em blog/urls.py
+    path('', include('blog.urls')),  # Se você quer que o index seja na raiz do site.
 ]

@@ -1,0 +1,27 @@
+<!-- blog/templates/blog/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Meu Blog{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+
+    <nav>
+        <!-- Links de navegação -->
+    </nav>
+
+    <main>
+        {% block content %}
+        <!-- Conteúdo principal -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+</body>
+</html>
